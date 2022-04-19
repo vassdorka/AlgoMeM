@@ -1,0 +1,162 @@
+$sand: #826e9f;
+$lightersand: #d3c7e5;
+@mixin setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mergeSetterbox {
+  @include setting;
+  position: absolute;
+  right: 7%;
+  top: 13%;
+  transition: 0.4s;
+  z-index: 2;
+  #mergeSetterBtn {
+    background: transparent;
+    height: 5em;
+    width: 4em;
+    border: none;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+      padding: 0;
+      color: $sand;
+      font-family: Rubik;
+      font-size: 500%;
+      font-weight: 1000;
+      margin-top: -60px;
+    }
+  }
+}
+
+#mergeSetterBtn:hover p {
+  color: $lightersand;
+  transition: 0.4s;
+}
+
+#mergeSet1,
+#mergeSet2 {
+  @include setting;
+  flex-direction: column;
+  width: 40%;
+}
+
+#mergeSpeedLabel,
+#mergeNumberLabel {
+  margin: 0;
+  margin-bottom: 6px;
+  color: $sand;
+  font-size: 160%;
+  letter-spacing: 1px;
+}
+
+#mergeBtns {
+  #mergeButton1,
+  #mergeButton2 {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-radius: 50px;
+    background: $sand;
+    font-size: 150%;
+    font-family: Rubik;
+    color: $lightersand;
+    border: none;
+    &:hover {
+      background: $lightersand;
+      color: $sand;
+      transition: 0.3s;
+    }
+  }
+  #mergeButton1 {
+    margin-right: 20px;
+    transform: rotate(90deg);
+  }
+  #mergeButton2 {
+    transform: rotate(270deg);
+  }
+}
+
+.mergeSetterbox.inactive {
+  top: -100%;
+  transition: 0.4s;
+}
+
+.mergeSetter {
+  width: 27%;
+  height: 18%;
+  overflow-x: hidden;
+  position: fixed;
+  top: -100%;
+  right: 5.5%;
+  transition: 0.4s;
+  z-index: 2;
+  font-family: Rubik;
+  #mergeSetterDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .mergeClose {
+    position: absolute;
+    right: 8%;
+    height: 1.2em;
+    width: 1em;
+    font-size: 190%;
+    color: $sand;
+    &:hover {
+      color: $lightersand;
+      transition: 0.3s;
+    }
+  }
+}
+
+.mergeSetter.active {
+  top: 9%;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 930px) {
+  .mergeSetter {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 901px) {
+  #mergeButton1,
+  #mergeButton2 {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+  }
+  #mergeButton1 {
+    margin-right: 10px!important;
+  }
+  #mergeSpeedLabel,
+  #mergeNumberLabel {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1001px) {
+  #mergeButton1,
+  #mergeButton2 {
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+    padding-top: 7px!important;
+    padding-bottom: 7px!important;
+  }
+  #mergeButton1 {
+    margin-right: 10px!important;
+  }
+  #mergeSpeedLabel,
+  #mergeNumberLabel {
+    font-size: 130%;
+  }
+}

@@ -1,0 +1,415 @@
+.mergeSort {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  background: #fffefa;
+  width: 100%;
+  height: 100vh;
+}
+
+.doneDiv {
+  display: none;
+  position: absolute;
+  background: transparent;
+  top: 47%;
+  left: 44.75%;
+}
+
+.doneDiv #doneTxt {
+  background: transparent;
+  color: #fff;
+  font-family: NunitoExtraLight;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 116px;
+  -webkit-animation: type 1s steps(13, end);
+          animation: type 1s steps(13, end);
+}
+
+.doneDiv #doneTxt::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 1px;
+  height: 40%;
+  border-right: 2px solid #fff;
+  -webkit-animation: blink 0.5s infinite ease;
+          animation: blink 0.5s infinite ease;
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mergeTitle {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  margin-bottom: 100px;
+  z-index: 2;
+}
+
+.mergeTitle #title {
+  color: #826e9f;
+  font-family: Rubik;
+  position: absolute;
+  z-index: 0;
+  font-size: 520%;
+  left: 6%;
+}
+
+#mergeDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 3;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#mergeDiv #combs {
+  background-size: cover;
+  width: 160px;
+}
+
+#backBtnDiv {
+  width: 10%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+
+#backBtnDiv #backButton {
+  display: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 200%;
+  font-family: Rubik;
+  background: transparent;
+  color: #826e9f;
+  border: none;
+  margin-right: 50px;
+}
+
+#backBtnDiv #backButton:hover {
+  color: #d3c7e5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#btnDiv {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+
+#btnDiv #againButton,
+#btnDiv #startButton {
+  display: none;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 240%;
+  font-family: Rubik;
+  background: transparent;
+  color: #826e9f;
+  border: none;
+  margin-right: 10px;
+}
+
+#btnDiv #againButton:hover,
+#btnDiv #startButton:hover {
+  color: #d3c7e5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#expButton,
+#quickAnimationaButton {
+  height: 370px;
+  width: 300px;
+  top: 28%;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background: rgba(255, 253, 253, 0.46);
+  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.03em;
+  font-family: Bodoni;
+  font-size: 230%;
+  color: #000;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#expButton:hover,
+#quickAnimationaButton:hover {
+  background: rgba(62, 7, 218, 0.46);
+  color: #d3c7e5;
+}
+
+#quickAnimationaButton {
+  right: 55%;
+}
+
+#expButton {
+  left: 55%;
+}
+
+#mergeSetterBtn {
+  display: none;
+}
+
+#mergeExplonationDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+#mergeExplonationDiv #start,
+#mergeExplonationDiv #mergeStart,
+#mergeExplonationDiv #firstEnd,
+#mergeExplonationDiv #secondStart,
+#mergeExplonationDiv #secondEnd,
+#mergeExplonationDiv #pointers,
+#mergeExplonationDiv #finalSort,
+#mergeExplonationDiv #end {
+  position: absolute;
+  top: 20%;
+  font-size: 100%;
+  font-weight: 100;
+  opacity: 0;
+  margin: 0;
+  color: #d3c7e5;
+  font-family: Rubik;
+}
+
+#mergeExplonationDiv #start {
+  left: 27%;
+}
+
+#mergeExplonationDiv #mergeStart {
+  left: 22.3%;
+}
+
+#mergeExplonationDiv #firstEnd {
+  left: 23.5%;
+}
+
+#mergeExplonationDiv #secondStart {
+  left: 30%;
+}
+
+#mergeExplonationDiv #secondEnd {
+  left: 25%;
+}
+
+#mergeExplonationDiv #pointers {
+  left: 23%;
+}
+
+#mergeExplonationDiv #finalSort {
+  left: 18%;
+  margin-top: -20px;
+}
+
+#mergeExplonationDiv #end {
+  left: 26%;
+  font-size: 170%;
+}
+
+#mergeExpButtonDiv {
+  width: 20%;
+  height: auto;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#mergeExpButtonDiv #mergeExpStartBtn {
+  padding: 3px;
+  padding-left: 23px;
+  padding-right: 17px;
+  font-size: 400%;
+  margin-right: 50px;
+  border-radius: 50px;
+  font-family: Rubik;
+  background: transparent;
+  color: #826e9f;
+  border: none;
+}
+
+#mergeExpButtonDiv #mergeExpStartBtn:hover {
+  color: #d3c7e5;
+}
+
+#mergeExpImages {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 20%;
+  left: 2%;
+  top: 8%;
+}
+
+#mergeExpImages #row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#mergeExpImages #row img {
+  width: 20%;
+}
+
+#mergeExpImages #row p {
+  margin-top: 25px;
+  color: #826e9f;
+  font-family: Rubik;
+  font-size: 85%;
+  margin-left: 3px;
+}
+
+@media only screen and (max-width: 930px) {
+  #mergeDiv {
+    display: none !important;
+  }
+  #againButton,
+  #startButton {
+    font-size: 200% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 240% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) {
+  #title {
+    font-size: 320% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  #title {
+    font-size: 400% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1001px) {
+  #title {
+    font-size: 450% !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1201px) {
+  #title {
+    font-size: 500% !important;
+  }
+}
+/*# sourceMappingURL=MergeSort.css.map */

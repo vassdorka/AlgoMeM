@@ -1,0 +1,315 @@
+.bubSetterbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 8%;
+  top: 6%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.bubSetterbox #setterBtn {
+  background: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+  height: 4.2em;
+  width: 2.8em;
+  background: #c06dcd;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 2;
+}
+
+.bubSetterbox #setterBtn #line1,
+.bubSetterbox #setterBtn #line2,
+.bubSetterbox #setterBtn #line3 {
+  background: #b264be;
+  width: 15%;
+  height: 45%;
+  margin-right: 5px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 4px 4px 0px #00000040 inset;
+          box-shadow: 0px 4px 4px 0px #00000040 inset;
+}
+
+.bubSetterbox #setterBtn #line3 {
+  margin: 0;
+}
+
+.bubSetterbox #setterBtn #line1 {
+  margin-left: 2px;
+}
+
+.bubSetterbox #setterBtn:hover {
+  margin-top: -10px;
+  background: #c17acc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#bubSet1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin-bottom: 12px;
+}
+
+#bubSet2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin-bottom: 12px;
+  margin-right: 25px;
+}
+
+#bubSpeedLabel {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: transparent;
+  text-shadow: 0px 2px 4px #b264be, 0 0 0 rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 170%;
+}
+
+#bubNumberLabel {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: transparent;
+  text-shadow: 0px 2px 4px #b264be, 0 0 0 rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 170%;
+}
+
+#BubBtns #bubButton1,
+#BubBtns #bubButton2 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+  text-align: center;
+  background: #b264be;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  border: none;
+}
+
+#BubBtns #bubButton1 h3,
+#BubBtns #bubButton2 h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 150%;
+  color: transparent;
+  text-shadow: 0px 2px 4px #c06dcd, 0 0 0 rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+#BubBtns #bubButton1 #up,
+#BubBtns #bubButton2 #up {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#BubBtns #bubButton1 #down,
+#BubBtns #bubButton2 #down {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#BubBtns #bubButton1:hover,
+#BubBtns #bubButton2:hover {
+  background: #c17acc;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#BubBtns #bubButton1 {
+  margin-right: 20px;
+}
+
+.bubSetterbox.inactive {
+  top: -100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.bubSetter {
+  width: 26%;
+  height: auto;
+  position: fixed;
+  top: -100%;
+  right: 8%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.bubSetter #bubSetterDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c06dcd;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  padding-bottom: 10px;
+}
+
+.bubSetter .bubClose {
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  height: 1.2em;
+  width: 1em;
+  color: transparent;
+  text-shadow: 0px 2px 4px #b264be, 0 0 0 rgba(0, 0, 0, 0.4);
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.bubSetter .bubClose:hover {
+  text-shadow: 0px 2px 4px #c06dcd, 0 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.bubSetter.active {
+  top: 5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 660px) {
+  .bubSetter {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 759px) and (min-width: 661px) {
+  #bubButton1,
+  #bubButton2 {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  #bubButton1 {
+    margin-right: 6px !important;
+  }
+  #bubNumberLabel, #bubSpeedLabel {
+    font-size: 110%;
+    margin-top: 15px;
+  }
+  .bubSetter {
+    width: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 760px) {
+  #bubButton1,
+  #bubButton2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  #bubButton1 {
+    margin-right: 6px !important;
+  }
+  #bubNumberLabel, #bubSpeedLabel {
+    font-size: 120%;
+    margin-top: 15px;
+  }
+  .bubSetter {
+    width: 29.5% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 901px) {
+  #bubButton1,
+  #bubButton2 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  #bubButton1 {
+    margin-right: 8px !important;
+  }
+  #bubNumberLabel, #bubSpeedLabel {
+    font-size: 150%;
+    margin-top: 10px;
+  }
+  .bubSetter {
+    width: 27% !important;
+  }
+}
+
+@media only screen and (max-width: 1260px) and (min-width: 1001px) {
+  #bubButton1,
+  #bubButton2 {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    padding-left: 19px !important;
+    padding-right: 19px !important;
+  }
+  #bubButton1 {
+    margin-right: 10px !important;
+  }
+  #bubNumberLabel, #bubSpeedLabel {
+    font-size: 160%;
+    margin-top: 10px;
+  }
+  .bubSetter {
+    width: 28% !important;
+  }
+}
+/*# sourceMappingURL=BubbleSetter.css.map */

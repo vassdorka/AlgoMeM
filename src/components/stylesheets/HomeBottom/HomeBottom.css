@@ -1,0 +1,390 @@
+.thirdPage {
+  position: absolute;
+  margin-top: 200vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.thirdPage #letseeTxt {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: BitterRegular;
+  font-size: 600%;
+  color: #000;
+  margin: 0;
+  margin-top: 5%;
+}
+
+.thirdPage #havehereTxt {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: BitterLight;
+  font-size: 400%;
+  color: #000;
+  margin: 0;
+  margin-bottom: 2.5%;
+}
+
+.thirdPage #boxContainer {
+  width: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.thirdPage #boxContainer #row1, .thirdPage #boxContainer #row2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thirdPage #boxContainer #row1 #bubbleBox2,
+.thirdPage #boxContainer #row1 #quickBox2,
+.thirdPage #boxContainer #row1 #mergeBox2,
+.thirdPage #boxContainer #row1 #insertionBox2,
+.thirdPage #boxContainer #row1 #countingBox2,
+.thirdPage #boxContainer #row1 #bucketBox2, .thirdPage #boxContainer #row2 #bubbleBox2,
+.thirdPage #boxContainer #row2 #quickBox2,
+.thirdPage #boxContainer #row2 #mergeBox2,
+.thirdPage #boxContainer #row2 #insertionBox2,
+.thirdPage #boxContainer #row2 #countingBox2,
+.thirdPage #boxContainer #row2 #bucketBox2 {
+  width: 20%;
+  height: 200px;
+  background: #fffcf4;
+  border: 5px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1%;
+}
+
+.thirdPage #boxContainer #row1 #bubbleBox2:hover,
+.thirdPage #boxContainer #row1 #quickBox2:hover,
+.thirdPage #boxContainer #row1 #mergeBox2:hover,
+.thirdPage #boxContainer #row1 #insertionBox2:hover,
+.thirdPage #boxContainer #row1 #countingBox2:hover,
+.thirdPage #boxContainer #row1 #bucketBox2:hover, .thirdPage #boxContainer #row2 #bubbleBox2:hover,
+.thirdPage #boxContainer #row2 #quickBox2:hover,
+.thirdPage #boxContainer #row2 #mergeBox2:hover,
+.thirdPage #boxContainer #row2 #insertionBox2:hover,
+.thirdPage #boxContainer #row2 #countingBox2:hover,
+.thirdPage #boxContainer #row2 #bucketBox2:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  background: #000;
+}
+
+.thirdPage #boxContainer #row1 #bubbleBox2:hover #text1,
+.thirdPage #boxContainer #row1 #quickBox2:hover #text1,
+.thirdPage #boxContainer #row1 #mergeBox2:hover #text1,
+.thirdPage #boxContainer #row1 #insertionBox2:hover #text1,
+.thirdPage #boxContainer #row1 #countingBox2:hover #text1,
+.thirdPage #boxContainer #row1 #bucketBox2:hover #text1, .thirdPage #boxContainer #row2 #bubbleBox2:hover #text1,
+.thirdPage #boxContainer #row2 #quickBox2:hover #text1,
+.thirdPage #boxContainer #row2 #mergeBox2:hover #text1,
+.thirdPage #boxContainer #row2 #insertionBox2:hover #text1,
+.thirdPage #boxContainer #row2 #countingBox2:hover #text1,
+.thirdPage #boxContainer #row2 #bucketBox2:hover #text1 {
+  opacity: 1;
+}
+
+.thirdPage #boxContainer #row1 #bubbleBox2:hover #text2,
+.thirdPage #boxContainer #row1 #quickBox2:hover #text2,
+.thirdPage #boxContainer #row1 #mergeBox2:hover #text2,
+.thirdPage #boxContainer #row1 #insertionBox2:hover #text2,
+.thirdPage #boxContainer #row1 #countingBox2:hover #text2,
+.thirdPage #boxContainer #row1 #bucketBox2:hover #text2, .thirdPage #boxContainer #row2 #bubbleBox2:hover #text2,
+.thirdPage #boxContainer #row2 #quickBox2:hover #text2,
+.thirdPage #boxContainer #row2 #mergeBox2:hover #text2,
+.thirdPage #boxContainer #row2 #insertionBox2:hover #text2,
+.thirdPage #boxContainer #row2 #countingBox2:hover #text2,
+.thirdPage #boxContainer #row2 #bucketBox2:hover #text2 {
+  opacity: 1;
+}
+
+.thirdPage #bubbleBox,
+.thirdPage #quickBox,
+.thirdPage #mergeBox,
+.thirdPage #insertionBox,
+.thirdPage #countingBox,
+.thirdPage #bucketBox {
+  position: absolute;
+  width: 15%;
+  height: 300px;
+  background: #fffcf4;
+  border: 5px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.thirdPage #bubbleBox:hover,
+.thirdPage #quickBox:hover,
+.thirdPage #mergeBox:hover,
+.thirdPage #insertionBox:hover,
+.thirdPage #countingBox:hover,
+.thirdPage #bucketBox:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  background: #000;
+}
+
+.thirdPage #bubbleBox:hover #text1,
+.thirdPage #quickBox:hover #text1,
+.thirdPage #mergeBox:hover #text1,
+.thirdPage #insertionBox:hover #text1,
+.thirdPage #countingBox:hover #text1,
+.thirdPage #bucketBox:hover #text1 {
+  opacity: 1;
+}
+
+.thirdPage #bubbleBox:hover #text2,
+.thirdPage #quickBox:hover #text2,
+.thirdPage #mergeBox:hover #text2,
+.thirdPage #insertionBox:hover #text2,
+.thirdPage #countingBox:hover #text2,
+.thirdPage #bucketBox:hover #text2 {
+  opacity: 1;
+}
+
+.thirdPage #bubbleBox {
+  left: 25%;
+}
+
+.thirdPage #bubbleBox:hover ~ #quickBox {
+  left: 44%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #bubbleBox:hover ~ #mergeBox {
+  left: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #bubbleBox:hover ~ #insertionBox {
+  left: 56%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #bubbleBox:hover ~ #countingBox {
+  left: 62%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #bubbleBox:hover ~ #bucketBox {
+  left: 68%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #quickBox {
+  left: 31%;
+}
+
+.thirdPage #quickBox:hover ~ #mergeBox {
+  left: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #quickBox:hover ~ #insertionBox {
+  left: 56%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #quickBox:hover ~ #countingBox {
+  left: 62%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #quickBox:hover ~ #bucketBox {
+  left: 68%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #mergeBox {
+  left: 37%;
+}
+
+.thirdPage #mergeBox:hover ~ #insertionBox {
+  left: 56%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #mergeBox:hover ~ #countingBox {
+  left: 62%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #mergeBox:hover ~ #bucketBox {
+  left: 68%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #insertionBox {
+  left: 43%;
+}
+
+.thirdPage #insertionBox:hover ~ #countingBox {
+  left: 62%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #insertionBox:hover ~ #bucketBox {
+  left: 68%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #countingBox {
+  left: 49%;
+}
+
+.thirdPage #countingBox:hover ~ #bucketBox {
+  left: 68%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thirdPage #bucketBox {
+  left: 55%;
+}
+
+.thirdPage #link {
+  text-decoration: none;
+  font-family: BitterExtraLight;
+  color: #fffcf4;
+  letter-spacing: 2px;
+}
+
+.thirdPage #link #text1, .thirdPage #link #text2 {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.thirdPage #link #text1 {
+  font-size: 250%;
+}
+
+.thirdPage #link #text2 {
+  font-size: 350%;
+}
+
+@media screen and (max-width: 700px) {
+  #havehereTxt {
+    font-size: 300% !important;
+    margin-bottom: 0 !important;
+  }
+  #letseeTxt {
+    font-size: 500% !important;
+  }
+  #bubbleBox,
+  #quickBox,
+  #mergeBox,
+  #insertionBox,
+  #countingBox,
+  #bucketBox {
+    display: none !important;
+    width: 0 !important;
+  }
+  #boxContainer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  #havehereTxt {
+    font-size: 350% !important;
+  }
+  #letseeTxt {
+    font-size: 550% !important;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+  #link #text1 {
+    font-size: 150% !important;
+  }
+  #link #text2 {
+    font-size: 250% !important;
+  }
+}
+
+@media screen and (max-width: 1150px) and (min-width: 901px) {
+  #link #text1 {
+    font-size: 150% !important;
+  }
+  #link #text2 {
+    font-size: 250% !important;
+  }
+}
+/*# sourceMappingURL=HomeBottom.css.map */

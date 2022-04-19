@@ -1,0 +1,61 @@
+#quickAnimationtBtn,
+#explonationBtn {
+  height: 370px;
+  width: 300px;
+  top: 27%;
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  border: 5px solid #000;
+  font-family: BitterRegular;
+  font-size: 200%;
+  color: #000;
+}
+
+#quickAnimationtBtn:hover,
+#explonationBtn:hover {
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+#quickAnimationtBtn {
+  right: 55%;
+}
+
+#quickAnimationtBtn:hover {
+  background: #000;
+  color: #fffcf4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#explonationBtn {
+  left: 55%;
+}
+
+#explonationBtn:hover {
+  background: #000;
+  color: #fffcf4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 599px) {
+  #quickAnimationtBtn,
+  #explonationBtn {
+    height: 300px !important;
+    width: 220px !important;
+    font-size: 180%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  #quickAnimationtBtn,
+  #explonationBtn {
+    height: 330px !important;
+    width: 250px !important;
+    font-size: 180%;
+  }
+}
+/*# sourceMappingURL=Picker.css.map */

@@ -1,0 +1,179 @@
+.setterbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 10%;
+  top: 6%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.setterbox #setterBtn {
+  background: transparent;
+  border: none;
+  height: 4.2em;
+  width: 2.8em;
+  background-image: url(../Graphics/insertionSort/neonButton.png);
+  background-size: cover;
+  z-index: 2;
+}
+
+.setterbox #setterBtn:hover {
+  background-image: url(../Graphics/insertionSort/neonButtonFocus.png);
+}
+
+#set1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#set2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#speedLabel {
+  width: 55%;
+  margin-bottom: 10px;
+}
+
+#numberLabel {
+  width: 55%;
+  margin-bottom: 10px;
+}
+
+#Btns #button1,
+#Btns #button2 {
+  padding: 22px;
+  text-align: center;
+  background: transparent;
+  background-size: cover;
+  border: none;
+  color: #fff;
+}
+
+#Btns #button1 {
+  margin-right: 20px;
+  background-image: url(../Graphics/insertionSort/neonCircleUp.png);
+}
+
+#Btns #button1:hover {
+  background-image: url(../Graphics/insertionSort/neonCircleFocusUp.png);
+}
+
+#Btns #button2 {
+  background-image: url(../Graphics/insertionSort/neonCircleDown.png);
+}
+
+#Btns #button2:hover {
+  background-image: url(../Graphics/insertionSort/neonCircleFocusDown.png);
+}
+
+.setterbox.inactive {
+  top: -100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.setter {
+  width: 25%;
+  height: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: -100%;
+  right: 10%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.setter #setterDiv {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.setter .close {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  height: 1.2em;
+  width: 1em;
+  background-image: url(../Graphics/insertionSort/neonX.png);
+  background-size: cover;
+}
+
+.setter .close:hover {
+  background-image: url(../Graphics/insertionSort/neonXFocus.png);
+  height: 1.3em;
+  width: 1.15em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.setter.active {
+  top: 6%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 810px) {
+  .setter {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 929px) {
+  .setter {
+    width: 30% !important;
+  }
+  #button1,
+  #button2 {
+    padding: 18px !important;
+  }
+  #button1 {
+    margin-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 930px) {
+  .setter {
+    width: 30% !important;
+  }
+}
+/*# sourceMappingURL=InsertionSetter.css.map */

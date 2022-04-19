@@ -1,0 +1,24 @@
+.home {
+  background: #fffcf4;
+  margin: 0;
+  padding: 0;
+  height: 295vh;
+  cursor: none;
+}
+
+#homeLine1,
+#homeLine2 {
+  background: #000;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+}
+
+#homeLine1 {
+  margin-top: 100vh;
+}
+
+#homeLine2 {
+  top: 200vh;
+}
+/*# sourceMappingURL=Home.css.map */

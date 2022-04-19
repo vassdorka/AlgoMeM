@@ -1,0 +1,268 @@
+#secondPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  margin-top: 100vh;
+  height: 100vh;
+}
+
+#secondPage #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#secondPage #container #firstRow {
+  width: 100%;
+  height: auto;
+}
+
+#secondPage #container #firstRow #question {
+  max-width: 100%;
+  font-family: BitterLight;
+  font-size: 600%;
+  color: #000;
+  margin: 0;
+  margin-left: 10%;
+}
+
+#secondPage #container #secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  height: auto;
+}
+
+#secondPage #container #secondRow #codes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#secondPage #container #secondRow #codes #hiddenAlgo {
+  background: transparent;
+  font-family: BitterRegular;
+  font-size: 310%;
+  z-index: 1;
+  color: #000;
+  margin: 0;
+  margin-top: 4%;
+}
+
+#secondPage #container #secondRow #codes #barCodes1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 2;
+  background: transparent;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+}
+
+#secondPage #container #secondRow #codes #barCodes1 img {
+  padding: 0;
+  margin: 0;
+  height: 75px;
+  width: 27px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+#secondPage #container #secondRow #codes #barCodes1 img:hover {
+  opacity: 0;
+}
+
+#secondPage #container #secondRow #for {
+  margin: 0;
+  z-index: 0;
+  font-size: 400%;
+  font-family: BitterRegular;
+  color: #000;
+  margin-left: 10%;
+}
+
+#secondPage #container #content {
+  text-align: left;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+#secondPage #container #content p, #secondPage #container #content h1, #secondPage #container #content h2 {
+  font-family: BitterSemiBold;
+  color: #000;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+#secondPage #container #content h2 {
+  font-size: 110%;
+  font-style: italic;
+}
+
+#secondPage #container #content h1 {
+  font-size: 135%;
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+#halfLine {
+  background: #000;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 50%;
+  margin-top: 100vh;
+}
+
+#sortAnim {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  z-index: 0;
+}
+
+#sortAnim img {
+  width: 60%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #halfLine {
+    display: none;
+  }
+  #sortAnim {
+    width: 0;
+    display: none;
+  }
+  #container {
+    width: 100% !important;
+  }
+  #container #content p {
+    font-size: 90% !important;
+  }
+  #container #content h1 {
+    font-size: 100% !important;
+  }
+  #container #content h2 {
+    font-size: 125% !important;
+  }
+  #container #question {
+    font-size: 500% !important;
+  }
+  #container #for {
+    font-size: 300% !important;
+  }
+  #container #hiddenAlgo {
+    font-size: 210% !important;
+  }
+  #container #barCodes1 img {
+    height: 55px !important;
+    width: 17.5px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  #halfLine {
+    display: none;
+  }
+  #sortAnim {
+    width: 0;
+    display: none;
+  }
+  #container {
+    width: 100% !important;
+  }
+  #container #content p {
+    font-size: 110% !important;
+  }
+  #container #content h1 {
+    font-size: 120% !important;
+  }
+  #container #content h2 {
+    font-size: 145% !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 801px) {
+  #sortAnim img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 801px) {
+  #content p {
+    font-size: 90% !important;
+  }
+  #content h1 {
+    font-size: 100% !important;
+  }
+  #content h2 {
+    font-size: 125% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  #question {
+    font-size: 500% !important;
+  }
+  #for {
+    font-size: 300% !important;
+  }
+  #hiddenAlgo {
+    font-size: 210% !important;
+  }
+  #barCodes1 img {
+    height: 55px !important;
+    width: 17.5px !important;
+  }
+}
+/*# sourceMappingURL=HomeMid.css.map */

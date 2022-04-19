@@ -1,0 +1,210 @@
+.countSetterbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 2%;
+  top: 3.5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.countSetterbox #countSetterBtn {
+  background: transparent;
+  display: none;
+  border: none;
+  height: 4em;
+  width: 4.2em;
+  z-index: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countSetterbox #countSetterBtn #setterBtnText {
+  padding-left: 6px;
+  color: #fffefa;
+  font-size: 280%;
+  font-family: SixCaps;
+  letter-spacing: 6px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#countSet1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+#countSet2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#countSpeedLabel,
+#countNumberLabel {
+  color: #fffefa;
+  width: 50%;
+  font-weight: 100;
+  font-size: 300%;
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#countNumberLabel {
+  margin-left: -12px;
+}
+
+#countBtns #countButton1,
+#countBtns #countButton2 {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  background: transparent;
+  border: 3px solid #fffefa;
+}
+
+#countBtns #countButton1 #cup, #countBtns #countButton1 #cdown,
+#countBtns #countButton2 #cup,
+#countBtns #countButton2 #cdown {
+  color: #fffefa;
+  font-family: SixCaps;
+  font-size: 300%;
+  margin: 0;
+  line-height: 50px;
+}
+
+#countBtns #countButton1 #cup,
+#countBtns #countButton2 #cup {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#countBtns #countButton1 #cdown,
+#countBtns #countButton2 #cdown {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#countBtns #countButton1:hover,
+#countBtns #countButton2:hover {
+  background: #fffefa;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#countBtns #countButton1:hover #cup,
+#countBtns #countButton2:hover #cup {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../Graphics//countingSort//greenRedBackGround.png");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#countBtns #countButton1:hover #cdown,
+#countBtns #countButton2:hover #cdown {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../Graphics//countingSort//greenRedBackGround.png");
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#countBtns #countButton1 {
+  margin-right: 10px;
+}
+
+.countSetterbox.inactive {
+  top: -100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.countSetter {
+  width: 20%;
+  overflow-x: hidden;
+  position: fixed;
+  top: -100%;
+  right: 2%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 2;
+  font-family: SixCaps;
+}
+
+.countSetter #countSetterDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.countSetter .countClose {
+  position: absolute;
+  right: 1%;
+  top: 0%;
+  height: 1em;
+  width: 0.5em;
+  font-size: 300%;
+  color: #fffefa;
+}
+
+.countSetter.active {
+  top: 3%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 1400px) {
+  .countSetter {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .countSetter {
+    width: 19% !important;
+  }
+}
+/*# sourceMappingURL=CountingSetter.css.map */

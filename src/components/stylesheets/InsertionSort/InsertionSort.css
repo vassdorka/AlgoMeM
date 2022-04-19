@@ -1,0 +1,357 @@
+#insertDonediv {
+  display: none;
+  position: absolute;
+  background: transparent;
+  top: 47%;
+  left: 44.75%;
+}
+
+#insertDonediv #insertDoneTxt {
+  background: transparent;
+  color: #fff;
+  font-family: NunitoLight;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 133px;
+  -webkit-animation: type 1s steps(17, end);
+          animation: type 1s steps(17, end);
+}
+
+#insertDonediv #insertDoneTxt::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 1px;
+  height: 40%;
+  border-right: 2px solid #fff;
+  -webkit-animation: blink 0.5s infinite ease;
+          animation: blink 0.5s infinite ease;
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.insertionSort {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  background: #fffefa;
+  width: 100%;
+  height: 100vh;
+}
+
+.insertionTitle {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  display: none;
+  z-index: 2;
+}
+
+.insertionTitle img {
+  width: 35%;
+  padding-top: 50px;
+  padding-left: 60px;
+}
+
+#bigTitle1 {
+  color: #000;
+  font-size: 1400%;
+  font-family: BodoniBold;
+  position: absolute;
+  bottom: 32%;
+  left: 17%;
+  z-index: 0;
+}
+
+#bigTitle2 {
+  color: #000;
+  font-size: 1400%;
+  font-family: BodoniBold;
+  position: absolute;
+  top: 33%;
+  left: 58%;
+  z-index: 0;
+}
+
+#insertionDiv {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+#insertionDiv #hand {
+  background-size: cover;
+  z-index: 2;
+}
+
+#back-div {
+  width: 10%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+
+#back-div #back-button {
+  display: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background: transparent;
+  background-image: url(../Graphics/insertionSort/whiteNeonArrow.png);
+  background-size: cover;
+}
+
+#back-div #back-button:hover {
+  background-image: url(../Graphics/insertionSort/purpleBeonArrow.png);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#button-div {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+}
+
+#button-div #again-button,
+#button-div #start-button {
+  display: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 77px;
+  padding-right: 77px;
+  border: none;
+  background: transparent;
+}
+
+#button-div #again-button {
+  background-image: url(../Graphics/insertionSort/whiteNeonAgain.png);
+  background-size: cover;
+}
+
+#button-div #again-button:hover {
+  background-image: url(../Graphics/insertionSort/orangeNeonAgain.png);
+  margin-top: -15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#button-div #start-button {
+  background-image: url(../Graphics/insertionSort/whiteNeonStart.png);
+  background-size: cover;
+  margin-right: 50px;
+}
+
+#button-div #start-button:hover {
+  background-image: url(../Graphics/insertionSort/blueNeonStart.png);
+  margin-top: -15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#setterBtn {
+  display: none;
+}
+
+#insertExplonationDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#insertExplonationDiv #firstStep,
+#insertExplonationDiv #key,
+#insertExplonationDiv #comparison,
+#insertExplonationDiv #placeKey,
+#insertExplonationDiv #expEnd {
+  position: absolute;
+  top: 19%;
+  font-family: NunitoLightItalic;
+  letter-spacing: 0;
+  color: #fff;
+  font-size: 150%;
+  font-weight: 100;
+  opacity: 0;
+  margin: 0;
+}
+
+#insertExplonationDiv #firstStep {
+  left: 27.8%;
+}
+
+#insertExplonationDiv #key {
+  left: 30.3%;
+}
+
+#insertExplonationDiv #comparison {
+  left: 30%;
+}
+
+#insertExplonationDiv #placeKey {
+  left: 23.8%;
+  margin-top: -60px;
+}
+
+#insertExplonationDiv #expEnd {
+  left: 33.5%;
+  font-size: 190%;
+}
+
+#insertExpButtonDiv {
+  width: 20%;
+  height: auto;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+#insertExpButtonDiv #insertExpStartBtn {
+  color: transparent;
+  padding: 40px;
+  border: none;
+  background: transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-image: url(../Graphics/insertionSort/neonCircleUp.png);
+  background-size: cover;
+}
+
+#insertExpButtonDiv #insertExpStartBtn:hover {
+  background-image: url(../Graphics/insertionSort/neonCircleFocusUp.png);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#insertExpImages {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 20%;
+  left: 2%;
+  top: 5%;
+}
+
+#insertExpImages #row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#insertExpImages #row img {
+  width: 25%;
+}
+
+#insertExpImages #row p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: NunitoRegular;
+  font-size: 75%;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-left: -5px;
+}
+
+@media only screen and (max-width: 810px) {
+  #insertionDiv {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=InsertionSort.css.map */

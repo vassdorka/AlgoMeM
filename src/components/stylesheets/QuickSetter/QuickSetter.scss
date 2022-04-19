@@ -1,0 +1,157 @@
+$yellow: #f6e710;
+@mixin set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quickSetterbox {
+  @include set;
+  position: absolute;
+  right: 7%;
+  top: 8%;
+  transition: 0.4s;
+  z-index: 2;
+  #quickSetterBtn {
+    background: transparent;
+    height: 4.2em;
+    width: 2.8em;
+    border: 2px solid $yellow;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+      padding: 0;
+      color: $yellow;
+      font-family: ShadowIntoLight;
+      font-size: 200%;
+      margin-top: -30px;
+    }
+    #firstP {
+      margin-top: -7px;
+    }
+    &:hover {
+      background: $yellow;
+      color: #164053;
+      transition: 0.4s;
+    }
+  }
+}
+
+#quickSetterBtn:hover p {
+  color: #164053;
+  transition: 0.4s;
+}
+
+#quickSet1,
+#quickSet2 {
+  @include set;
+  flex-direction: column;
+  width: 40%;
+}
+
+#quickSpeedLabel,
+#quickNumberLabel {
+  margin: 0;
+  margin-bottom: 8px;
+  color: #f6e710;
+  font-size: 180%;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#quickBtns {
+  #quickButton1,
+  #quickButton2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border: 2px solid $yellow;
+    box-sizing: border-box;
+    color: $yellow;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 150%;
+    font-family: ShadowIntoLight;
+    &:hover {
+      background: $yellow;
+      color: #164053;
+      transition: 0.3s;
+    }
+  }
+  #quickButton1 {
+    margin-right: 20px;
+    transform: rotate(90deg);
+  }
+  #quickButton2 {
+    transform: rotate(270deg);
+  }
+}
+
+.quickSetterbox.inactive {
+  top: -100%;
+  transition: 0.4s;
+}
+
+.quickSetter {
+  width: 25%;
+  height: 18%;
+  overflow-x: hidden;
+  position: fixed;
+  top: -100%;
+  right: 5%;
+  transition: 0.4s;
+  z-index: 2;
+  font-family: ShadowIntoLight;
+  #quickSetterDiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .quickClose {
+    position: absolute;
+    right: 8%;
+    height: 1.2em;
+    width: 1em;
+    color: $yellow;
+    font-size: 190%;
+  }
+}
+.quickSetter.active {
+  top: 8%;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 719px) {
+  .quickSetter {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 969px) and (min-width: 720px) {
+  .quickSetter {
+    width: 30%!important;
+  }
+  #quickButton1,
+  #quickButton2 {
+    padding-left: 12px!important;
+    padding-right: 12px!important;
+    font-size: 120%!important;
+  }
+  #quickButton1 {
+    margin-right: 10px!important;;
+  }
+  #quickSpeedLabel,
+  #quickNumberLabel {
+    font-size: 145%!important;
+    margin-bottom: 6px!important
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 970px) {
+  .quickSetter {
+    width: 28%!important;
+  }
+}

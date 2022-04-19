@@ -1,0 +1,158 @@
+* {
+  cursor: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 3.1%;
+  top: 3.6%;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar svg {
+  height: 1.5em;
+  width: 1.5em;
+  color: #000;
+}
+
+.navbar.inactive {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav {
+  width: 100%;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 1;
+  letter-spacing: -1px;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 110%;
+  text-align: center;
+}
+
+.nav #link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #000;
+  font-family: BitterSemiBold;
+}
+
+.nav #link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav #link:hover {
+  letter-spacing: 1px;
+  font-family: BitterBold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav #link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav #link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav .close {
+  position: absolute;
+  right: 3%;
+  top: 25%;
+}
+
+.nav .close svg {
+  color: #000;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+@media screen and (max-height: 300px) {
+  .nav ul {
+    margin-top: 40px;
+  }
+}
+
+.nav.active {
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 549px) {
+  ul {
+    margin-right: 40px !important;
+  }
+  li {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 699px) and (min-width: 550px) {
+  ul {
+    margin-right: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 700px) {
+  ul {
+    margin-right: 60px !important;
+  }
+  li {
+    font-size: 90% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+/*# sourceMappingURL=Navigation.css.map */

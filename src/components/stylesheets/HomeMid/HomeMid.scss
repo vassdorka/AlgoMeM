@@ -1,0 +1,231 @@
+$font: #000;
+$fontRegular: BitterRegular;
+
+#secondPage {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 100vh;
+  height: 100vh;
+
+    #container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #firstRow {
+      width: 100%;
+      height: auto;
+      #question {
+        max-width: 100%;
+        font-family: BitterLight;
+        font-size: 600%;
+        color: $font;
+        margin: 0;
+        margin-left: 10%;
+      }
+    }
+
+    #secondRow {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      height: auto;
+      #codes {
+        display: flex;
+        flex-direction: row;
+        #hiddenAlgo {
+          background: transparent;
+          font-family: $fontRegular;
+          font-size: 310%;
+          z-index: 1;
+          color: $font;
+          margin: 0;
+          margin-top: 4%;
+        }
+        #barCodes1 {
+          display: flex;
+          flex-direction: row;
+          z-index: 2;
+          background: transparent;
+          width: 100%;
+          margin: 0;
+          position: absolute;
+          img {
+            padding: 0;
+            margin: 0;
+            height: 75px;
+            width: 27px;
+            transition: all 0.7s ease;
+            &:hover {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      #for {
+        margin: 0;
+        z-index: 0;
+        font-size: 400%;
+        font-family: $fontRegular;
+        color: $font;
+        margin-left: 10%;
+      }
+  }
+
+    #content {
+    text-align: left;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    p, h1, h2 {
+      font-family: BitterSemiBold;
+      color: $font;
+      font-weight: 100;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 110%;
+      font-style: italic;
+    }
+    h1 {
+      font-size: 135%;
+      margin-top: 0;
+      margin-left: 15px;
+    }
+  }
+  }
+  }
+
+#halfLine {
+  background: #000;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 50%;
+  margin-top: 100vh;
+}
+
+#sortAnim {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 0;
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #halfLine {
+    display: none;
+  }
+  #sortAnim {
+    width: 0;
+    display: none;
+  }
+  #container {
+    width: 100%!important;
+    #content {
+      p {
+        font-size: 90%!important;
+      } 
+      h1 {
+        font-size: 100%!important;
+      } 
+      h2 {
+        font-size: 125%!important;
+      }
+    }
+    #question {
+      font-size: 500%!important;
+    }
+    #for {
+      font-size: 300%!important;
+    }
+    #hiddenAlgo {
+      font-size: 210%!important;
+    }
+    #barCodes1 {
+      img {
+        height: 55px!important;
+        width: 17.5px!important;
+      }
+    }
+}
+}
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+  #halfLine {
+    display: none;
+  }
+  #sortAnim {
+    width: 0;
+    display: none;
+  }
+  #container {
+    width: 100%!important;
+    #content {
+      p {
+        font-size: 110%!important;
+      } 
+      h1 {
+        font-size: 120%!important;
+      } 
+      h2 {
+        font-size: 145%!important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 801px) {
+#sortAnim {
+  img {
+    width: 70%;
+  }
+}
+}
+@media only screen and (max-width: 1000px) and (min-width: 801px) {
+  #content {
+    p {
+      font-size: 90%!important;
+    } 
+    h1 {
+      font-size: 100%!important;
+    } 
+    h2 {
+      font-size: 125%!important;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  #question {
+    font-size: 500%!important;
+  }
+  #for {
+    font-size: 300%!important;
+  }
+  #hiddenAlgo {
+    font-size: 210%!important;
+  }
+  #barCodes1 {
+    img {
+      height: 55px!important;
+      width: 17.5px!important;
+    }
+  }
+}

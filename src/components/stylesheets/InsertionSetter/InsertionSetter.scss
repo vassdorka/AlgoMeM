@@ -1,0 +1,130 @@
+@mixin set {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.setterbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  top: 6%;
+  transition: 0.4s;
+  z-index: 2;
+  #setterBtn {
+    background: transparent;
+    border: none;
+    height: 4.2em;
+    width: 2.8em;
+    background-image: url(../Graphics/insertionSort/neonButton.png);
+    background-size: cover;
+    z-index: 2;
+    &:hover {
+      background-image: url(../Graphics/insertionSort/neonButtonFocus.png);
+    }
+  }
+}
+#set1 {
+  @include set;
+}
+#set2 {
+  @include set;
+}
+#speedLabel {
+  width: 55%;
+  margin-bottom: 10px;
+}
+#numberLabel {
+  width: 55%;
+  margin-bottom: 10px;
+}
+#Btns {
+  #button1,
+  #button2 {
+    padding: 22px;
+    text-align: center;
+    background: transparent;
+    background-size: cover;
+    border: none;
+    color: #fff;
+  }
+  #button1 {
+    margin-right: 20px;
+    background-image: url(../Graphics/insertionSort/neonCircleUp.png);
+    &:hover {
+      background-image: url(../Graphics/insertionSort/neonCircleFocusUp.png);
+    }
+  }
+  #button2 {
+    background-image: url(../Graphics/insertionSort/neonCircleDown.png);
+    &:hover {
+      background-image: url(../Graphics/insertionSort/neonCircleFocusDown.png);
+    }
+  }
+}
+.setterbox.inactive {
+  top: -100%;
+  transition: 0.4s;
+}
+.setter {
+  width: 25%;
+  height: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: -100%;
+  right: 10%;
+  transition: 0.4s;
+  z-index: 2;
+  #setterDiv {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  .close {
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    height: 1.2em;
+    width: 1em;
+    background-image: url(../Graphics/insertionSort/neonX.png);
+    background-size: cover;
+    &:hover {
+      background-image: url(../Graphics/insertionSort/neonXFocus.png);
+      height: 1.3em;
+      width: 1.15em;
+      transition: 0.3s;
+    }
+  }
+}
+.setter.active {
+  top: 6%;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 810px) {
+  .setter {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 929px){
+  .setter {
+    width: 30%!important;
+  }
+  #button1,
+  #button2 {
+    padding: 18px!important;
+  }
+#button1 {
+  margin-right: 10px!important;
+}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 930px){
+  .setter {
+    width: 30%!important;
+  }
+}

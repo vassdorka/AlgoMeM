@@ -1,0 +1,118 @@
+$lightgrey : #8D8B8C;
+$pinkLighter: rgba(255, 148, 159, 0.5);
+$greenblue : rgba(2, 209, 149, 0.5);
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bucketSetterbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  top: 4%;
+  transition: 0.4s;
+  z-index: 2;
+  #bucketSetterBtn {
+    background: transparent;
+    height: 2em;
+    width: 2em;
+    color: #000;
+    z-index: 2;
+  }
+}
+#bucketSet1 {
+  @include center;
+  width: 50%;
+  margin-bottom: 6px;
+}
+#bucketSet2 {
+  @include center;
+  width: 50%;
+  margin-bottom: 6px;
+}
+#bucketSpeedLabel,
+#bucketNumberLabel {
+  font-size: 170%;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+#bucketBtns {
+  #bucketButton1,
+  #bucketButton2 {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid $lightgrey;
+    font-size: 140%;
+    background: transparent;
+  }
+  #bucketButton1 {
+    margin-right: 10px;
+    transform: rotate(90deg);
+    &:hover {
+        background: $pinkLighter;
+        transition: 0.5s;
+    }
+  }
+  #bucketButton2 {
+    transform: rotate(270deg);
+    &:hover {
+        background: $greenblue;
+        transition: 0.5s;
+    }
+  }
+}
+.bucketSetterbox.inactive {
+  top: -100%;
+  transition: 0.4s;
+}
+.bucketSetter {
+  width: 20%;
+  position: fixed;
+  top: -100%;
+  right: 3%;
+  transition: 0.4s;
+  z-index: 4;
+  #bucketSetterDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .bucketClose {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    svg {
+        color: #000;
+        height: 2em;
+        width: 2em;
+    }
+  }
+}
+.bucketSetter.active {
+  top: 4%;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 999px) {
+  .bucketSetter {
+    display: none!important;
+  }
+}
+@media only screen and (max-width: 1350px) and (min-width: 1000px) {
+  .bucketSetter {
+    width: 22%!important;
+  }
+}
